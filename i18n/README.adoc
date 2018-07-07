@@ -1,0 +1,13 @@
+# I18n
+
+Contains a sample project on basic i18n implementation. 
+
+To test the app.
+- Checkout and `cd` to the directory.
+- Execute the project using `./gradlew bootRun`
+- Check the response being controlled by the `accept-language` header, usign the below 2 CuRLs.
+
+```
+ curl http://localhost:8080/message  -H 'accept-language: ta-in'
+ curl http://localhost:8080/message  -H 'accept-language: en-us'
+```
